@@ -1,0 +1,28 @@
+{
+    "technologies": [
+        {
+            "id": 1,
+            "title": "First",
+            "runtime": "118 min",
+            "year": "2019"
+        },
+        {
+            "id": 2,
+            "title": "Second",
+            "runtime": "118 min",
+            "year": "2019"
+        },
+        {
+            "id": 3,
+            "title": "Third",
+            "runtime": "118 min",
+            "year": "2019"
+        },
+        {
+            "id": 4,
+            "title": "Fourth",
+            "runtime": "118 min",
+            "year": "2019"
+        }
+    ]
+}
