@@ -1,1 +1,0 @@
-import{_ as o,c as t,a as s,o as a}from"./index-DZOUnA33.js";const n={};function r(c,e,l,p,u,_){return a(),t("div",null,e[0]||(e[0]=[s("h1",null,"About",-1)]))}const f=o(n,[["render",r]]);export{f as default};
