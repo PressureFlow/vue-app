@@ -1,1 +1,0 @@
-import{_ as o,c as s,a as t,o as a}from"./index-BmVliM7i.js";const n={},r={flex:""};function c(p,e,_,d,f,l){return a(),s("div",r,e[0]||(e[0]=[t("span",{class:"text-2xl"},"Home",-1)]))}const m=o(n,[["render",c]]);export{m as default};
