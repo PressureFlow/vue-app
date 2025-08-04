@@ -5,10 +5,15 @@ import NavPage from './components/navigation/NavPage.vue';
 </script>
 
 <template>
-  <NavPage></NavPage>
+  <body class="bg-gray-900">
+    <NavPage ></NavPage>
   <router-view></router-view>
+  </body>
+  
 </template> 
 
-<style scoped> 
-
+<style> 
+body {
+    font-family: "Montserrat", serif;
+}
 </style>

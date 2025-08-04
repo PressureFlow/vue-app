@@ -2,27 +2,23 @@
     "technologies": [
         {
             "id": 1,
-            "title": "First",
-            "runtime": "118 min",
+            "title": "Фреймворк Vue",
+            "image": "../public/image/image_2023-12-06_19-07-49.png",
             "year": "2019"
+            
         },
         {
             "id": 2,
-            "title": "Second",
-            "runtime": "118 min",
+            "title": "Фреймворк React",
+            "image": "../public/image/image_2023-12-06_19-12-49.png",
             "year": "2019"
         },
         {
             "id": 3,
-            "title": "Third",
-            "runtime": "118 min",
-            "year": "2019"
-        },
-        {
-            "id": 4,
-            "title": "Fourth",
+            "title": "Ванильный JS",
             "runtime": "118 min",
             "year": "2019"
         }
+        
     ]
 }
