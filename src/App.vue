@@ -1,12 +1,11 @@
 <script setup>
 import NavPage from "./components/navigation/NavPage.vue";
-
 </script>
 
 <template>
   <body class="bg-gray-900">
     <NavPage />
-        <RouterView />
+    <RouterView />
   </body>
 </template>
 

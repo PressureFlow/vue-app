@@ -26,7 +26,7 @@
           <a href="#" class="text-gray-800 hover:text-blue-500"><router-link to="/">Home</router-link></a>
           <a href="#" class="text-gray-800 hover:text-blue-500"><router-link to="/about">About</router-link></a>
           <a href="#" class="text-gray-800 hover:text-blue-500"><router-link to="/tech">Technologies</router-link></a>
-          <button class="px-8 py-3 bg-pink-500 hover:bg-pink-400 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-pink-500 focus:ring-opacity-50">Click here</button>
+          <router-link to="/contact"><button class="px-8 py-3 bg-pink-500 hover:bg-pink-400 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-pink-500 focus:ring-opacity-50">Contact me</button></router-link>
         </div>
         
       </div>
