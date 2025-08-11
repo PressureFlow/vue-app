@@ -1,19 +1,21 @@
 <script setup>
-import NavPage from './components/navigation/NavPage.vue';
-
+import NavPage from "./components/navigation/NavPage.vue";
 
 </script>
 
 <template>
   <body class="bg-gray-900">
-    <NavPage ></NavPage>
-  <router-view></router-view>
+    <NavPage />
+        <RouterView />
   </body>
-  
-</template> 
+</template>
 
-<style> 
+<style>
 body {
-    font-family: "Montserrat", serif;
+  font-family: "Montserrat", serif;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
 }
 </style>

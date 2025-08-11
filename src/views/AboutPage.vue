@@ -1,6 +1,6 @@
 <template>
     <body class="bg-gray-900 text-gray-100 p-8 min-h-screen flex items-center justify-center ">
-  <div class="container mx-auto p-4 md:p-10 bg-gray-800 rounded-3xl shadow-2xl max-w-7xl mt-20">
+  <div class="container mx-auto p-4 md:p-10 bg-linear-to-b/srgb from-indigo-500/10 to-sky-400/33 backdrop:blur-2xl rounded-3xl shadow-2xl max-w-7xl mt-20">
 
         <!-- Секция "Обо мне" и "Слайдер" -->
         <div class="flex flex-col lg:flex-row justify-between items-center lg:space-x-12 ">

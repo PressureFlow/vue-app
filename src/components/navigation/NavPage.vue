@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-sky-800 shadow-md fixed w-full z-10">
+  <nav class="bg-linear-to-r from-cyan-500 to-blue-500 shadow-md fixed w-full z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <!-- Логотип -->
@@ -23,9 +23,9 @@
 
         <!-- Меню для десктопа -->
         <div class="hidden md:flex md:items-center space-x-6">
-          <a href="#" class="text-gray-100 hover:text-blue-500"><router-link to="/">Home</router-link></a>
-          <a href="#" class="text-gray-100 hover:text-blue-500"><router-link to="/about">About</router-link></a>
-          <a href="#" class="text-gray-100 hover:text-blue-500"><router-link to="/tech">Technologies</router-link></a>
+          <a href="#" class="text-gray-800 hover:text-blue-500"><router-link to="/">Home</router-link></a>
+          <a href="#" class="text-gray-800 hover:text-blue-500"><router-link to="/about">About</router-link></a>
+          <a href="#" class="text-gray-800 hover:text-blue-500"><router-link to="/tech">Technologies</router-link></a>
           <button class="px-8 py-3 bg-pink-500 hover:bg-pink-400 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-pink-500 focus:ring-opacity-50">Click here</button>
         </div>
         
@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import { isFunctionType } from '@vue/compiler-core';
+
 
 export default {
   name: 'Navbar',
