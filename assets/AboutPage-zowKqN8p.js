@@ -1,4 +1,4 @@
-import{f as Y,g as m,h as N,s as xe,w as ue,i as we,j as $e,k as pt,l as ve,t as mt,m as _,n as ht,p as ae,u as bt,q as St,v as wt,x as xt,y as We,z as X,A as I,B as yt,C as V,o as F,a as k,e as ye,_ as _t,c as At,d as Tt,r as Et}from"./index-C6aBiJWN.js";const Dt="/vue-app/assets/Start_page-0001-ClPt83kx.jpg",Nt="/vue-app/assets/Basic_page-0001-DDJh8Nvg.jpg",Ct="/vue-app/assets/Upgrade_page-0001-Bk64X5g-.jpg",kt="/vue-app/assets/Pro_page-0001-CVKPnQAK.jpg",Ot="/vue-app/assets/Itogovaya%20attestatsiya%20(1)_page-0001-BZoaKT_d.jpg";/**
+import{f as Y,g as m,h as N,s as xe,w as ue,i as we,j as $e,k as pt,l as ve,t as mt,m as _,n as ht,p as ae,u as bt,q as St,v as wt,x as xt,y as We,z as X,A as I,B as yt,C as V,o as F,a as k,e as ye,_ as _t,c as At,d as Tt,r as Et}from"./index-D0usA8vg.js";const Dt="/vue-app/assets/Start_page-0001-ClPt83kx.jpg",Nt="/vue-app/assets/Basic_page-0001-DDJh8Nvg.jpg",Ct="/vue-app/assets/Upgrade_page-0001-Bk64X5g-.jpg",kt="/vue-app/assets/Pro_page-0001-CVKPnQAK.jpg",Ot="/vue-app/assets/Itogovaya%20attestatsiya%20(1)_page-0001-BZoaKT_d.jpg";/**
  * Vue 3 Carousel 0.16.0
  * (c) 2025
  * @license MIT
