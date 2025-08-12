@@ -1,23 +1,24 @@
 <script setup>
+import { motion } from "motion-v";
 import TechnologiesCard from "../components/TechnologiesCard.vue";
 </script>
 
 <template>
-  <h1>Technologies</h1>
-  <div class="m-10 max-sm:m-1">
-    <div class="flex flex-wrap w-full gap-5 justify-between mt-25 bg-linear-to-b/srgb from-indigo-500/10 to-sky-400/33 backdrop:blur-2xl rounded-3xl shadow-2xl max-sm:mt-15">
+  <div class="max-sm:m-1 pt-20">
+    <motion.div
+    :initial="{y:10, opacity:0}"
+    :animate="{y:0,opacity:1}"
+    :exit="{y:-10,opacity:0}"
+    :transition="{duration: 1}"
+    >
+    <div class="flex flex-wrap w-full gap-5 justify-between bg-linear-to-b/srgb from-indigo-500/10 to-sky-400/33 backdrop:blur-2xl rounded-3xl shadow-2xl ">
       <TechnologiesCard />
     </div>
+
+    </motion.div>
   </div>
 </template>
 
 <style>
-.hand-drawn-line {
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
-}
-.hand-drawn-line {
-  stroke: rgb(255, 255, 255);
-  stroke-width: 2;
-  stroke-linecap: round; /*  Закругляет концы линии */
-}
+
 </style>

@@ -12,9 +12,8 @@ import NavPage from "./components/navigation/NavPage.vue";
 <style>
 body {
   font-family: "Montserrat", serif;
-  min-height: 100vh;
 }
-html {
-  scroll-behavior: smooth;
+html, body {
+  height: calc(100% - 50px);
 }
 </style>
