@@ -1,6 +1,6 @@
 <template>
 <nav
-    class="shadow-md fixed w-full z-10 text-gray-100 backdrop-blur-2xl"
+    class="shadow-md fixed w-full z-10 text-(--text-light) backdrop-blur-2xl bg-(--dark-background)"
     :class="['navbar', { scrolled: scrolledOnce }]"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,6 +52,9 @@
           >
           <a href="#" class=" hover:text-blue-500"
             ><router-link to="/tech">Technologies</router-link></a
+          >
+          <a href="#" class=" hover:text-blue-500"
+            ><router-link to="/services">Services</router-link></a
           >
           <router-link to="/contact"
             ><button

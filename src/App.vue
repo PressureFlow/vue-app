@@ -3,7 +3,7 @@ import NavPage from "./components/navigation/NavPage.vue";
 </script>
 
 <template>
-  <body class="bg-gray-900">
+  <body class="bg-(--dark-basement)">
     <NavPage />
     <RouterView />
   </body>

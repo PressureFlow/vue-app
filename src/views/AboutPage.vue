@@ -1,5 +1,5 @@
 <template>
-    <body class="bg-gray-900 text-gray-100 p-8 min-h-screen flex items-center justify-center ">
+    <body class="bg-(--dark-background) text-gray-100 p-8 min-h-screen flex items-center justify-center ">
         <motion.div
     :initial="{y:10, opacity:0}"
     :animate="{y:0,opacity:1}"

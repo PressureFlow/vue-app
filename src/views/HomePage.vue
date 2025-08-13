@@ -1,9 +1,9 @@
 <template>
   <section class="background-section flex justify-center" id="first">
       <motion.div
-        class="m-5 p-10 rounded-3xl w-440 text-gray-100 mt-25 shadow-2xl max-sm:p-0"
+        class="m-5 p-10 rounded-3xl w-440 text-(--text-light) mt-25 shadow-2xl max-sm:p-0"
         :initial="{ y: 10, opacity: 0, backdropFilter: 'blur(0) brightness(1)',  }"
-      :animate="{ y: 0, opacity: 1, backdropFilter: 'blur(20px) brightness(0.8)', }"
+      :animate="{ y: 0, opacity: 1, backdropFilter: 'blur(20px) brightness(0.5)', }"
       :exit="{ y: -10, opacity: 0 }"
       :transition="{ duration: 1 }"
       >
@@ -22,7 +22,7 @@
               </p>
             </span>
             <motion.button
-              class="px-8 py-3 bg-pink-500 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg"
+              class="impuls-btn px-8 py-3 bg-pink-500 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg"
               @click="scrollToSection"
               :whileHover="{ scale: 1.1 }"
               :whilePress="{ scale: 0.95 }"
@@ -49,7 +49,7 @@
     :while-in-view="{ opacity: 1, y: 0, scale: 1 }"
     :in-view-options="{ once: false }"
   >
-    <section class="mt-10" id="second" ref="section">
+    <section class="bg-(--dark-background) p-10 max-sm:p-2" id="second" ref="section">
       <div
         class="flex flex-row-reverse justify-around items-center max-sm:flex-col-reverse max-sm:m-3"
       >
@@ -58,7 +58,7 @@
             <span class="text-pink-400">Илья</span> — Ваш будущий
             фронтенд-разработчик.
           </h1>
-          <p class="text-justify text-2xl text-gray-100 max-sm:text-xl">
+          <p class="text-justify text-2xl text-(--text-light) max-sm:text-xl">
             С головой погружен в мир фронтенд-разработки, я учусь на 3 курсе
             "Информационные системы и программирование" и постоянно
             совершенствую свои знания. Моя страсть — создание интуитивно
@@ -104,7 +104,7 @@
     :while-in-view="{ opacity: 1, y: 0, scale: 1 }"
     :in-view-options="{ once: false }"
   >
-    <section class="p-10 max-sm:p-3" id="third">
+    <section class="p-10 max-sm:p-3 bg-(--dark-background)" id="third">
       <div
         class="flex justify-around bg-linear-to-b/srgb from-indigo-500/10 to-sky-400/33 backdrop:blur-2xl rounded-2xl shadow-2xl max-sm:flex-wrap"
       >
@@ -116,7 +116,19 @@
 <script setup>
 import TechnologiesCard from "../components/TechnologiesCard.vue";
 import AboutPage from "./AboutPage.vue";
-import { motion } from "motion-v";
+import { motion, animate, spring } from "motion-v";
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const animation = animate(".impuls-btn", {scale:1.1},
+    {
+      duration: 1,
+      easing: spring(),
+      repeat: Infinity,
+      direction: "alternative"
+    }
+  )
+})
 
 function scrollToSection() {
   this.$refs.section.scrollIntoView({ behavior: "smooth" });
@@ -124,7 +136,7 @@ function scrollToSection() {
 </script>
 <style>
 .background-section {
-  background-image: url("../../public/image/top-mountain.jpg");
+  background-image: url("../../public/image/top-mountain.webp");
   background-size: cover;
 }
 </style>
