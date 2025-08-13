@@ -25,3 +25,12 @@
 
     --pink: #cd317c;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: calc(100% - 50px);
+}
