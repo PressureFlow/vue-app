@@ -1,0 +1,1 @@
+import{c as n,d as s}from"./index-Dn4HTR6v.js";const a=(e,c)=>{const t=e.__vccOpts||e;for(const[r,o]of c)t[r]=o;return t},_={};function f(e,c){return s(),n("div")}const i=a(_,[["render",f]]);export{i as default};
