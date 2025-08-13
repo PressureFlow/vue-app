@@ -10,35 +10,35 @@
   >
     <Slide :key="1">
       <img
-        src="../../../public/image/sertificats/Start_page-0001.jpg"
+        src="/image/certificates/Start_page-0001.jpg"
         alt=""
         class="w-full h-full object-cover flex-shrink-0"
       />
     </Slide>
     <Slide :key="2">
       <img
-        src="../../../public/image/sertificats/Basic_page-0001.jpg"
+        src="/image/certificates/Basic_page-0001.jpg"
         alt=""
         class="w-full h-full object-cover flex-shrink-0"
       />
     </Slide>
     <Slide :key="3">
       <img
-        src="../../../public/image/sertificats//Upgrade_page-0001.jpg"
+        src="/image/certificates/Upgrade_page-0001.jpg"
         alt=""
         class="w-full h-full object-cover flex-shrink-0"
       />
     </Slide>
     <Slide :key="4">
       <img
-        src="../../../public/image/sertificats/Pro_page-0001.jpg"
+        src="/image/certificates/Pro_page-0001.jpg"
         alt=""
         class="w-full h-full object-cover flex-shrink-0"
       />
     </Slide>
     <Slide :key="5">
       <img
-        src="../../../public/image/sertificats/Itogovaya attestatsiya (1)_page-0001.jpg"
+        src="/image/certificates/Itogovaya attestatsiya (1)_page-0001.jpg"
         alt=""
         class="w-full h-full object-cover flex-shrink-0"
       />
