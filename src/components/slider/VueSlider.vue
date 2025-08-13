@@ -72,27 +72,24 @@ const carouselConfig = {
 </script>
 
 <style>
-
-
-
 .carousel__next,
 .carousel__prev {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: white;
-    margin: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  margin: 20px;
 }
 
 .carousel__next:hover,
 .carousel__prev:hover {
-    color: #e5e5e5;
+  color: #e5e5e5;
 }
 
 .carousel__next--disabled,
 .carousel__prev--disabled {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .carousel__pagination-button {
