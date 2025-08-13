@@ -5,7 +5,7 @@
     </div>
     <div class="tech-content">
       <div class="tech-image mb-3">
-        <img src="../../public/image/logo/vue.png" alt="">
+        <img src="/image/logo/vue.png" alt="">
       </div>
 
       <div class="tech-descr">
@@ -20,7 +20,7 @@
     </div>
     <div class="tech-content">
       <div class="tech-image mb-3">
-        <img src="../../public/image/logo/React.png" alt="">
+        <img src="/image/logo/React.png" alt="">
       </div>
 
       <div class="tech-descr">
@@ -35,7 +35,7 @@
     </div>
     <div class="tech-content">
       <div class="tech-image mb-3">
-        <img src="../../public/image/logo/js.png" alt="">
+        <img src="/image/logo/js.png" alt="">
       </div>
 
       <div class="tech-descr">

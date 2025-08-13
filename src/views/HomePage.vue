@@ -1,47 +1,51 @@
 <template>
   <section class="background-section flex justify-center" id="first">
-      <motion.div
-        class="m-5 p-10 rounded-3xl w-440 text-(--text-light) mt-25 shadow-2xl max-sm:p-0"
-        :initial="{ y: 10, opacity: 0, backdropFilter: 'blur(0) brightness(1)',  }"
-      :animate="{ y: 0, opacity: 1, backdropFilter: 'blur(20px) brightness(0.5)', }"
+    <motion.div
+      class="m-5 p-10 rounded-3xl w-440 text-(--text-light) mt-25 shadow-2xl max-sm:p-0"
+      :initial="{ y: 10, opacity: 0, backdropFilter: 'blur(0) brightness(1)' }"
+      :animate="{
+        y: 0,
+        opacity: 1,
+        backdropFilter: 'blur(20px) brightness(0.5)',
+      }"
       :exit="{ y: -10, opacity: 0 }"
       :transition="{ duration: 1 }"
+    >
+      <div
+        class="flex w-full justify-around items-center max-sm:flex max-sm:flex-col-reverse max-sm:mt-0"
       >
-        <div
-          class="flex w-full justify-around items-center max-sm:flex max-sm:flex-col-reverse max-sm:mt-0"
-        >
-          <div class="w-1/3 max-sm:w-full max-sm:p-4 max-sm:mt-5">
-            <span class="text-2xl">
-              <h1 class="text-8xl font-bold uppercase max-sm:text-3xl mb-3">
-                привет, меня зовут <span class="text-pink-500">Илья</span>
-              </h1>
-              <p class="text-justify mb-3 max-sm:text-xl">
-                Это мой сайт-портфолио, тут ты можешь увидеть все детали обо мне
-                и об моих работах накопленных во время прохождения курсов в
-                московском университете "Синергия"
-              </p>
-            </span>
-            <motion.button
-              class="impuls-btn px-8 py-3 bg-pink-500 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg"
-              @click="scrollToSection"
-              :whileHover="{ scale: 1.1 }"
-              :whilePress="{ scale: 0.95 }"
-            >
-              Узнать
-            </motion.button>
-          </div>
-
-          <div
-            class="w-1/3 max-sm:w-full max-sm:max-h-30 max-sm:max-w-full overflow-hidden max-sm:rounded-t-3xl"
+        <div class="w-1/3 max-sm:w-full max-sm:p-4 max-sm:mt-5">
+          <span class="text-2xl">
+            <h1 class="text-8xl font-bold uppercase max-sm:text-3xl mb-3">
+              привет, меня зовут <span class="text-pink-500">Илья</span>
+            </h1>
+            <p class="text-justify mb-3 max-sm:text-xl">
+              Это мой сайт-портфолио, тут ты можешь увидеть все детали обо мне и
+              об моих работах накопленных во время прохождения курсов в
+              московском университете "Синергия"
+            </p>
+          </span>
+          <motion.button
+            class="impuls-btn px-8 py-3 bg-pink-500 text-white rounded-full uppercase font-bold text-sm md:text-base shadow-lg"
+            @click="scrollToSection"
+            :whileHover="{ scale: 1.1 }"
+            :whilePress="{ scale: 0.95 }"
           >
-            <img
-              src="../../public/image/5445178792663447678.jpg"
-              class="w-130 rounded-bl-full rounded-r-full max-sm:-translate-y-1/4"
-              alt=""
-            />
-          </div>
+            Узнать
+          </motion.button>
         </div>
-      </motion.div>
+
+        <div
+          class="w-1/3 max-sm:w-full max-sm:max-h-30 max-sm:max-w-full overflow-hidden max-sm:rounded-t-3xl"
+        >
+          <img
+            src="/image/profile.webp"
+            class="w-130 rounded-bl-full rounded-r-full max-sm:-translate-y-1/4"
+            alt=""
+          />
+        </div>
+      </div>
+    </motion.div>
   </section>
 
   <motion.div
@@ -49,7 +53,11 @@
     :while-in-view="{ opacity: 1, y: 0, scale: 1 }"
     :in-view-options="{ once: false }"
   >
-    <section class="bg-(--dark-background) p-10 max-sm:p-2" id="second" ref="section">
+    <section
+      class="bg-(--dark-background) p-10 max-sm:p-2"
+      id="second"
+      ref="section"
+    >
       <div
         class="flex flex-row-reverse justify-around items-center max-sm:flex-col-reverse max-sm:m-3"
       >
@@ -75,23 +83,23 @@
         >
           <div class="card w-full">
             <img
-              src="../../public/image/image_2023-12-06_19-07-49.png"
+              src="/image/portfolio-1.webp"
               class="w-full"
-              alt=""
+              alt="portfolio image 1"
             />
           </div>
           <div class="card w-full">
             <img
-              src="../../public/image/image_2023-12-06_19-12-49.png"
+              src="/image/portfolio-2.webp"
               class="w-full"
-              alt=""
+              alt="portfolio image 2"
             />
           </div>
           <div class="card w-full">
             <img
-              src="../../public/image/photo_2023-12-06_18-49-50.jpg"
+              src="/image/portfolio-3.webp"
               class="w-full"
-              alt=""
+              alt="portfolio image 3"
             />
           </div>
         </div>
@@ -120,15 +128,17 @@ import { motion, animate, spring } from "motion-v";
 import { onMounted } from "vue";
 
 onMounted(() => {
-  const animation = animate(".impuls-btn", {scale:1.1},
+  const animation = animate(
+    ".impuls-btn",
+    { scale: 1.1 },
     {
       duration: 1,
       easing: spring(),
       repeat: Infinity,
-      direction: "alternative"
+      direction: "alternative",
     }
-  )
-})
+  );
+});
 
 function scrollToSection() {
   this.$refs.section.scrollIntoView({ behavior: "smooth" });
@@ -136,7 +146,7 @@ function scrollToSection() {
 </script>
 <style>
 .background-section {
-  background-image: url("../../public/image/top-mountain.webp");
+  background-image: url("/image/hero-background.webp");
   background-size: cover;
 }
 </style>
